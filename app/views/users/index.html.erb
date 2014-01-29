@@ -1,1 +1,12 @@
-<h1> Logged In </h1>
+<h1> Gmail Login </h1>
+
+<% @unread_messages.each do |key, value| %>
+<div class="from"><%= key %></div>
+<% value.each do |message| %>
+<div class="message">
+  <%= message.message.subject %> |
+  <%= message.message.date %> |
+    <%= message.message.body.to_s.html_safe %> |
+</div>
+<% end %>
+<% end %>
