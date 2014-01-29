@@ -1,0 +1,39 @@
+@import "compass/css3/box-shadow";
+
+.title{
+  text-align: center;
+  h1{
+    font-family: 'Lato', sans-serif;
+    color:white;
+    font-weight: 300;
+    font-size: 4rem; 
+  }
+}
+
+input[placeholder], [placeholder], *[placeholder], input[type=text]{
+  color: black;
+  font-size: 2rem;
+  font-style: normal;  
+  height: 60px;
+  margin: 15px 0;
+  border: 1px solid white;
+  text-align: center;
+
+  &.box-shadow {
+    @include box-shadow(rgba(0, 0, 0, .2) 2px 2px 4px);
+  }
+
+}
+
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.plus{
+  color:white;
+  font-size: 60px;
+  font-weight:bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
