@@ -1,5 +1,11 @@
 @import "compass/css3/box-shadow";
 
+.options{
+  input[placeholder], [placeholder], *[placeholder], input[type=text]{
+    text-align: center;
+  }
+}
+
 .title{
   text-align: center;
   h1{
@@ -17,7 +23,7 @@ input[placeholder], [placeholder], *[placeholder], input[type=text]{
   height: 60px;
   margin: 15px 0;
   border: 1px solid white;
-  text-align: center;
+  text-align: left;
 
   &.box-shadow {
     @include box-shadow(rgba(0, 0, 0, .2) 2px 2px 4px);
@@ -36,4 +42,16 @@ input[placeholder], [placeholder], *[placeholder], input[type=text]{
   font-weight:bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   cursor: pointer;
+}
+
+.sample{
+  margin-left:6px;
+  h2{
+  color:white;
+  font-size: 2rem;
+}
+}
+
+#matrix-title{
+  text-align: center;
 }

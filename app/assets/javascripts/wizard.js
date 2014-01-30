@@ -4,6 +4,7 @@ $(".question").on( "keypress", function(event){
     var question = $(".question").val();    
     $("#slide-1").hide();    
     $(".question").hide();
+    $(".sample").hide();
     $(".matrix").show();
     $("#matrix-title").html(question);
     $(".options").show();
