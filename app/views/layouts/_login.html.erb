@@ -12,7 +12,6 @@
   <% end -%>
 
   <p><%= f.submit "Sign in" %></p>
-  <%= link_to "Forgot your password?", new_password_path(:user) %>
-
-   <%= link_to "Sign in with Google", "/auth/google_oauth2" %>
+  <%= link_to "Forgot your password?", new_user_password_path %>
+   <%= link_to "Sign in with Google",  user_omniauth_authorize_path(:google_oauth2) %>
 <% end -%>

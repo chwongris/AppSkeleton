@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/90seconds/gmail.git
+  revision: 8cb3baa3ffb016d0af092819f1d251649ae300f4
+  specs:
+    gmail (0.4.0)
+      gmail_xoauth (>= 0.3.0)
+      mail (>= 2.2.1)
+      mime (>= 0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,7 +34,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    arel (4.0.1)
+    arel (4.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
@@ -37,7 +46,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -84,6 +93,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_source (0.8.2)
+    mime (0.2.0)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
@@ -110,7 +120,7 @@ GEM
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
-    pry (0.9.12.4)
+    pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
@@ -133,7 +143,7 @@ GEM
     rake (10.1.1)
     rdoc (4.1.1)
       json (~> 1.4)
-    sass (3.2.13)
+    sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
@@ -158,7 +168,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.0)
+    turbolinks (2.2.1)
       coffee-rails
     tzinfo (0.3.38)
     uglifier (2.4.0)
@@ -175,11 +185,11 @@ DEPENDENCIES
   compass-rails
   devise
   dotenv-rails
-  foundation-rails
-  gmail_xoauth
+  foundation-rails (~> 5.0.2.0)
+  gmail!
   httparty
   jbuilder (~> 1.2)
-  jquery-rails
+  jquery-rails (~> 3.0.4)
   jquery-ui-rails
   omniauth-google-oauth2
   pg
