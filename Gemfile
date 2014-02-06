@@ -35,7 +35,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'gmail'
+gem 'gmail_xoauth'
+gem "omniauth-google-oauth2"
+gem 'httparty'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
