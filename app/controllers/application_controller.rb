@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
 
   def get_account
     @contextio = ContextIO.new(ENV["CONTEXT_KEY"], ENV["CONTEXT_SECRET"])
-
   end
 
 end

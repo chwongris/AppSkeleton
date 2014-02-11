@@ -6,21 +6,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:google_oauth2]
 
 
-def self.login_gmail
-  # gmail = Gmail.new('christest27@gmail.com', 'wordpass`')
-  # gmail.peek = true
-  # return gmail
-
-end
-
-def get_unread
-  # login_gmail.inbox.emails(:unread)
-end
-
-def sort_by_sender
- 
-end
-
 def self.store_token(auth)
   auth["credentials"]["token"]
 end

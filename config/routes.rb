@@ -18,8 +18,8 @@ AppSkeleton::Application.routes.draw do
 
   resources :users
 
-   match "/api/emails" => "users#index", :via => :get
-
+  match "/api/emails" => "users#index", :via => :get
+  match "/api/email" => "users#archive", :via => :post
 
 
   # Example resource route with options:
