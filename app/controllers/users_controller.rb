@@ -18,7 +18,9 @@ class UsersController < ApplicationController
   end
 
   def archive
+   
     message = @account.messages["gm-"+params[:message_id]]
+    # binding.pry
     message.move_to(params[:flag], @account.sources.first.label)
     
     render :json => {success: true}
