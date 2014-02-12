@@ -41,6 +41,7 @@ gem 'httparty'
 gem 'gmail', :git => 'https://github.com/90seconds/gmail.git'
 gem 'contextio'
 
+
 gem 'dotenv-rails', :groups => [:development, :test]
 
 group :doc do
